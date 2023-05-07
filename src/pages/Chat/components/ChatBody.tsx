@@ -17,9 +17,9 @@ const currentTime = now.format("HH:mm")
   return (
     <>
       <header className="chat__mainHeader">
-        <p>Hangout with Colleagues</p>
+        <p>Общаемся</p>
         <button className="leaveChat__btn" onClick={handleLeaveChat}>
-          LEAVE CHAT
+          Выйти
         </button>
       </header>
 
@@ -45,7 +45,7 @@ const currentTime = now.format("HH:mm")
         <div className="message__status">
           <p>{typingStatus}</p>
         </div>
-        {/* <div ref={lastMessageRef} /> */}
+        <div ref={lastMessageRef} />
       </div>
     </>
   );

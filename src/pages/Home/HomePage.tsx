@@ -27,8 +27,8 @@ const HomePage: FC = () => {
   };
   return (
     <form className={s.container} onSubmit={handleSubmit}>
-      <h2 className={s.header}>Sign in to Open Chat</h2>
-      <label htmlFor="username">Username</label>
+      <h2 className={s.header}>Присоединиться к Open Chat</h2>
+      <label htmlFor="username">Введите имя</label>
       <input
         type="text"
         minLength={6}
@@ -38,7 +38,7 @@ const HomePage: FC = () => {
         value={userName}
         onChange={(e) => setUserName(e.target.value)}
       />
-      <button className={s.cta}>SIGN IN</button>
+      <button className={s.cta}>Войти</button>
     </form>
   );
 };

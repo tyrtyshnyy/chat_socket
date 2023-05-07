@@ -39,7 +39,9 @@ const ChatPage: FC = () => {
     lastMessageRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-
+console.log('====================================');
+console.log(lastMessageRef);
+console.log('====================================');
   return (
     <div className={s.chat}>
       <ChatBar socket={socket}/>

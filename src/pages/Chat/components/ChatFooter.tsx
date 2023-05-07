@@ -32,7 +32,7 @@ const ChatFooter: FC<ChatFooterProps> = ({socket} ) => {
           onChange={(e) => setMessage(e.target.value)}
           onKeyDown={handleTyping}
         />
-        <button className="sendBtn">SEND</button>
+        <button className="sendBtn">Отправить</button>
       </form>
     </div>
   );
