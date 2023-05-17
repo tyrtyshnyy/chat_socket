@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable no-undef */
-
+const Dotenv =  require("dotenv-webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
@@ -58,5 +58,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
     }),
+    new Dotenv(),
   ],
 };
